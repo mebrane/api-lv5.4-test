@@ -170,6 +170,7 @@ return [
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
 
 
         Laravel\Tinker\TinkerServiceProvider::class,
