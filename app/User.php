@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\models\Comment;
 use App\models\Profile;
 use App\models\Rol;
 use Illuminate\Notifications\Notifiable;
@@ -35,5 +36,9 @@ class User extends Authenticatable
     }
     public function rol(){
         $this->belongsTo(Rol::class);
+    }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
     }
 }
