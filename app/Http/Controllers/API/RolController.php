@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\API;
 
-use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class RolController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +15,6 @@ class UserController extends Controller
     public function index()
     {
         //
-        return response()->json([
-            "users"=>User::all()
-        ]);
     }
 
     /**
@@ -51,9 +47,6 @@ class UserController extends Controller
     public function show($id)
     {
         //
-        return response()->json([
-            "user"=>User::find($id)
-        ]);
     }
 
     /**
